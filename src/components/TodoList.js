@@ -18,7 +18,7 @@ export default function FormPage() {
     }
     //get data
     const getData = () => {
-        axios.get(`https://todo-backend-7zuv.onrender.com`).
+        axios.get(`https://todo-backend-1ss2.onrender.com/product`).
             then((data) => {
                 setFetchedData(data.data.data)
             })
@@ -30,7 +30,7 @@ export default function FormPage() {
     const submitForm = (e) => {
         e.preventDefault()
         if (text) {
-            axios.post('https://todo-backend-7zuv.onrender.com', {
+            axios.post('https://todo-backend-1ss2.onrender.com/product', {
                 text: text,
             })
                 .then(function (response) {
@@ -54,7 +54,7 @@ export default function FormPage() {
 
     }
     let putData = (id, text) => {
-        axios.put(`https://todo-backend-7zuv.onrender.com/${id}`, { text: text })
+        axios.put(`https://todo-backend-1ss2.onrender.com/product/${id}`, { text: text })
             .then((res) => {
                 setUpdate(false)
                 getData();
@@ -66,7 +66,7 @@ export default function FormPage() {
     //delete Data
     function handleDelete(_id) {
         axios
-            .delete(`https://todo-backend-7zuv.onrender.com/${_id}`)
+            .delete(`https://todo-backend-1ss2.onrender.com/product/${_id}`)
             .then(() => {
                 getData()
             });
