@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: rgb(46, 45, 45);
+}
+#main-container {
+  font-family: 'Ubuntu', sans-serif;
+  color: gray;
+  text-align: center;
+  background-color: #61dafb;
+  padding-bottom: 15px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+ left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+
+}
+
+.todo-container {
+  margin: 0 auto;
+
+}
+
+.todo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.todo-list {
+  font-size: 1.1em;
+  color:gray;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+form{
+  margin-bottom: 10px;
+}
+.edit-container{
+  margin-bottom: 5px;
+}
+input{
+  color: gray;
+  background-color: white;
+  padding-left: 15px;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.edit-input{
+  color:rgb(46, 45, 45) ;
+  background-color: lightgray;
+  padding-left: 15px;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.add-btn{
+  background-color: rgb(97, 235, 97);
+  border: 1px solid rgb(97, 235, 97);
+  color: gray;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.edit-btn{
+  background-color: rgb(237, 192, 110);
+  border: 1px solid rgb(237, 192, 110);
+  color: gray;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.add-btn:hover{
+  background-color: greenyellow;
+  color:rgb(46, 45, 45) ;
+}
+.edit-btn:hover{
+  background-color: orange;
+  color:rgb(46, 45, 45) ;
+  
+}
+.icon{
+  color:red;
+  font-size: 1.1em;
+  background-color: white;
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+}
+.icon:hover{
+  transform: scale(120%, 120%);
+}
+.edit-icon{
+  color: rgb(134, 14, 245);
+
+}
